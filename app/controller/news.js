@@ -12,7 +12,6 @@ class NewsController extends Controller {
 
     const newsList = await ctx.service.cNodeNews.getTopStories(page);
 
-    ctx.body = newsList;
     await ctx.render('news/list.tpl', { list: newsList, page, pageSize });
   }
 }
