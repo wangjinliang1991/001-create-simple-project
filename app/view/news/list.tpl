@@ -11,6 +11,7 @@
         <li class="item">
           <a class="user_avatar pull-left"><img src='{{ item.author.avatar_url}}'></a>
           <span>《{{ item.title }}》</span>
+          <span class="last_time pull-right">{{ item.last_reply_at  }}</span>
         </li>
         {% endfor %}
       </ul>
