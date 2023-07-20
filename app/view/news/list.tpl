@@ -9,7 +9,7 @@
       <ul class="news-view view">
         {% for item in list %}
         <li class="item">
-          <a class="user_avatar pull-left><img src="{{ item.author.avatar_url}}"></a>
+          <a class="user_avatar pull-left"><img src='{{ item.author.avatar_url}}'></a>
           <span>《{{ item.title }}》</span>
         </li>
         {% endfor %}
